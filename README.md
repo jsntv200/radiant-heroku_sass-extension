@@ -16,12 +16,12 @@ Update your bundle :
     $ bundle install
 
 The config.ru that ships with Radiant also causes issues on Heroku so
-either delete it or ignore it before an initial git commit. IF your app
-return 404 errors for your javacript or images then the issue is the
-config.ru file.
+either delete or ignore it before an initial git commit. If your app
+returns 404 errors when requesting your javacript or images then the issue 
+is the probably the config.ru file.
 
-Also ignore generated assets during development so they don't get
-deployed to Heroku. Ass the following to your .gitignore :
+You can also ignore generated assets during development so they don't get
+deployed to Heroku. Add the following to your .gitignore :
 
     public/stylesheets/admin
     public/stylesheets/layout
